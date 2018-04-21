@@ -6,3 +6,4 @@ menu.onclick = function myF() {
 		x.className = "top_nav";
 	}
 }
+
