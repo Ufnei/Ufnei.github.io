@@ -1,0 +1,55 @@
+.cube
+	position: relative
+	width: 300px
+	height: 300px
+	transform-origin: 50% 50% -150px
+	transform-style: preserve-3d
+	transition: all 1s ease
+
+// .cube:hover
+// 	transform: rotateY(-20deg) rotateX(10deg)
+
+
+
+.side
+	width: 300px
+	height: 300px
+	background-color: #fff
+	position: absolute
+	transform-origin: 50% 50% -150px
+
+#side1 
+	transform: rotateY(180deg) translateZ(-170px) 
+	border-radius: 15px
+
+#side1
+	h1,
+	p
+		transform: scaleX(-1)
+
+#side2 
+	transform: rotateY(90deg) translateZ(130px)
+	width: 40px
+	margin: 10px 0 10px 0
+	height: 280px
+	background-color: #ccc6c6
+
+#side3 
+	transform: rotateY(-90deg) translateZ(-130px)
+	width: 40px
+	margin: 10px 0 10px 0
+	height: 280px
+
+#side4 
+	transform: rotateX(90deg) translateZ(-130px)
+	height: 40px
+
+
+#side5 
+	transform: rotateX(-90deg) translateZ(130px)
+	height: 40px
+	background-color: #ccc6c6
+
+#side6 
+	transform: rotateY(180deg) translateZ(-130px)
+	border-radius: 15px

@@ -1,0 +1,378 @@
+
+
+/* TO DO 1) header height: 100vh, При маленьких экранах дочерние элементы(В нашем случае текст) 
+			съезжают вниз (Решение: проработать медиа запросы на высоту) */
+
+//****************************************************
+//*************ОБЩИЕ СЕЛЕКТОРЫ САЙТА******************
+//****************************************************
+
+
+
+
+//******************ИМПОРТИРУЕМ АНИМАЦИЮ*****************
+@import "animation"
+//***********ИМПОРТИРУЕМ КУБЫ В БЛОК ПРОЦЕСС*************
+@import "cubs"
+
+body 
+	margin: 0
+	padding: 0
+	font-family: 'App'
+
+@font-face
+	font-family: 'App'
+	src : url("../fonts/9651.ttf")
+
+.wrapper 
+	margin: 0 auto
+	width: 90%
+
+input,
+textarea,
+button
+	outline: none
+
+
+
+
+//****************************************************
+//*********************СКРОЛЛ*************************
+//****************************************************
+
+
+
+
+::-webkit-scrollbar-button 
+	background-image: url('')
+	background-repeat: no-repeat
+	width: 5px
+	height: 0px
+
+::-webkit-scrollbar-track 
+	background-color: #ffffff
+
+
+::-webkit-scrollbar-thumb 
+	-webkit-border-radius: 25px
+	border-radius: 25px
+	background-color: #848484
+
+
+::-webkit-scrollbar-thumb:hover
+	background-color: #3e3e3e
+
+
+::-webkit-resizer
+	background-image: url('')
+	background-repeat: no-repeat
+	width: 6px
+	height: 0px
+
+
+::-webkit-scrollbar
+	width: 6px
+
+//****************************************************
+//*********************ШАПКА**************************
+//***************************************************
+
+
+header 
+	height: 100vh
+	background-color: #000
+	color: #FFF
+.header
+	padding: 50px
+	display: flex
+	.logo 
+		width: 95%
+		h1
+			margin: 0
+			font-size: 44pt
+			span
+				font-style: italic
+				padding: 0 0 0 3px
+
+	.header_sidebar
+		.menu_button_open
+			width: 40px
+			height: 70px
+			padding: 10px 0 0 0
+			div
+				display: flex
+				width: 100%
+				height: 5px
+				border-radius: 10px
+				margin: 7px 0 0 0
+				background-color: #fff
+		.menu_button_open_fixed
+			position: fixed
+
+
+.header_menu
+	opacity: 0.8
+	border-radius: 15px
+	position: fixed
+	height: 950px
+	width: 400px
+	background-color: #fff
+	top: 10px
+	left: 100%
+	transform: translateX(400px)
+	.menu_button_close
+		float: right
+		width: 40px
+		height: 70px
+		padding: 30px 30px 0 0
+		div
+			display: flex
+			width: 100%
+			height: 6px
+			border-radius: 10px
+			margin: 7px 0 0 0
+			background-color: #000
+
+	.header_menu_links
+		text-decoration: none
+		a
+			display: inline-block
+			text-decoration: none
+			width: 100%
+			font-size: 20pt
+			color: #000
+			text-align: center
+			padding: 20px 0 0 0
+			span
+				border-bottom: 2px solid
+
+
+.representation
+	margin: 0 auto 
+	padding: 200px 0
+	h1 
+		font-size: 65pt
+		text-align: center
+		margin: 0
+		span
+			border-top: 2px solid #fff
+			border-bottom: 2px solid #fff
+		
+	p
+		text-align: center
+		font-size: 25pt
+
+  
+
+
+
+//****************************************************
+//*********************ОБО МНЕ************************
+//****************************************************
+
+
+.about 
+	display: flex
+	.my_photo
+		width: 60%
+		img
+			width: 100%
+			height: 100%
+			-webkit-filter: grayscale(100%)
+			-moz-filter: grayscale(100%)
+			-ms-filter: grayscale(100%)
+			-o-filter: grayscale(100%)
+			filter: grayscale(100%)
+			filter: gray 
+			-webkit-transition: all 2s
+			-moz-transition: all 2s
+			-o-transition: all 2s
+			transition: all 2s
+			object-fit: cover
+		img:hover 
+			-webkit-filter: none
+			-moz-filter: none
+			-ms-filter: none
+			-o-filter: none
+			filter: none
+			filter: none 
+		
+		
+	.about_description
+		width: 40%
+		margin: 0 5% 0 100px
+		h1
+			font-size: 30pt
+		p 
+			font-size: 20pt
+		button
+			margin: 30px 0 50px 0
+			width: 250px
+			height: 50px
+			border-radius: 30px
+			background-color: #fff
+			border: none
+			font-size: 19pt
+			background-color: #fff
+			box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5)
+
+
+
+//****************************************************
+//*********************ПРОЦЕСС************************
+//****************************************************
+
+.process
+	color: #fff
+	background-color: #000
+	.process_contents
+		padding: 150px 0 30px 0
+		text-align: center
+		h1
+			margin: 0 0 10px 0
+			font-size: 50pt
+		
+
+	.process_card
+		display: flex
+		text-align: center
+		justify-content: space-between
+		padding: 100px 0 200px 0
+		color: #000
+		.process_card_icon
+			width: 100%
+			height: 200px
+			img
+				width: 100%
+				height: 100%
+				-webkit-filter: grayscale(100%)
+				-moz-filter: grayscale(100%)
+				-ms-filter: grayscale(100%)
+				-o-filter: grayscale(100%)
+				filter: grayscale(100%)
+				filter: gray 
+				-webkit-transition: all 0.2s
+				-moz-transition: all 0.2s
+				-o-transition: all 0.2s
+				transition: all 0.2s
+				object-fit: cover
+				border-radius: 15px 15px 0 0
+			img:hover 
+				-webkit-filter: none
+				-moz-filter: none
+				-ms-filter: none
+				-o-filter: none
+				filter: none
+				filter: none 
+
+
+		//                          Стили старых карточек с псевдо 3д (Тени)
+		.card			
+			background-color: #fff
+			color: #000
+			height: 300px
+			width: 300px
+			border-radius: 25px
+			transition: all 0.5s ease
+		.card:hover
+			transform: skewY(-5deg)
+			box-shadow: 0.8em 0.8em #ccc6c6
+
+
+//****************************************************
+//******************ОПЫТ И СКИЛЫ**********************
+//****************************************************
+
+
+.experience
+	margin: 0 0 100px 0
+	.wrapper
+		display: flex
+	.experience_skills
+		height: 600px
+		width: 40%
+		margin: 0 auto
+		color: #fff
+		background-color: #000
+		border-radius: 30px
+		box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5)
+		h1
+			text-align: center		
+		.experience_skills_card
+			margin: 0 5% 0 5%
+			border-bottom: 2px solid grey
+			h1
+				text-align: left
+
+
+	.experience_education
+		color: #fff
+		background-color: #000
+		width: 40%
+		height: 600px
+		border-radius: 30px
+		box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5)
+		margin: 0 auto
+		h1
+			text-align: center
+		.experience_education_card
+			margin: 0 5% 0 5%
+			border-bottom: 2px solid grey
+			h1
+				text-align: left
+	.experience_contents
+		margin: 100px auto 100px auto
+		text-align: center
+		h1
+			font-size: 50pt
+			margin: 0 auto 10px auto
+
+
+//****************************************************
+//*********************ПОСЛЕДНИЕ**********************
+//****************************************************
+
+
+.latest
+	background-color: #000
+	color: #fff
+	margin: 50px 0 0 0
+	padding-bottom: 80px
+	.wrapper
+		
+	.latest_card
+		height: 700px
+		width: 100%
+		border-radius: 30px
+		background-color: #fff
+		box-shadow: 0.4em 0.4em #ccc6c6
+		transition: all 1s ease
+	.latest_card:hover
+			transform: skewY(-0.5deg)
+			box-shadow: 0.5em 0.5em #ccc6c6
+			height: 700px
+
+
+	.latest_content
+		padding: 100px 0 100px 0
+		text-align: center
+		h1
+			font-size: 50pt
+			margin: 0 auto 10px 0
+
+
+//****************************************************
+//*********************КОНТАКТЫ***********************
+//****************************************************
+.contact
+	.wrapper
+		display: flex
+		justify-content: space-between
+		.addresses,
+		.number,
+		.web
+			width: 30%
+			text-align: center
+
+
+

@@ -1,0 +1,89 @@
+.representation_anim
+	-webkit-animation: representation_anim 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both
+	animation: representation_anim 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both
+
+
+@-webkit-keyframes representation_anim
+	0% 
+		letter-spacing: 0.6em
+		opacity: 0
+  
+	40% 
+		opacity: 0.6
+  
+	100% 
+		letter-spacing: normal
+		opacity: 1
+  
+
+@keyframes representation_anim
+	0% 
+		letter-spacing: 0.6em
+		opacity: 0
+  
+	40% 
+		opacity: 0.6
+  
+	100% 
+		letter-spacing: normal
+		opacity: 1
+  
+
+
+
+
+
+.vibrate_button
+	-webkit-animation: vibrate_button 0.3s linear 5 
+	animation: vibrate_button 0.3s linear 5 
+
+@-webkit-keyframes vibrate_button 
+	0% 
+		-webkit-transform: translate(0)
+		transform: translate(0)
+  
+
+		-webkit-transform: translate(-2px, 2px)
+		transform: translate(-2px, 2px)
+  
+	40% 
+		-webkit-transform: translate(-2px, -2px)
+		transform: translate(-2px, -2px)
+  
+	60% 
+		-webkit-transform: translate(2px, 2px)
+		transform: translate(2px, 2px)
+  
+	80% 
+		-webkit-transform: translate(2px, -2px)
+		transform: translate(2px, -2px)
+  
+	100% 
+		-webkit-transform: translate(0)
+		transform: translate(0)
+  
+
+@keyframes vibrate_button 
+	0% 
+		-webkit-transform: translate(0)
+		transform: translate(0)
+  
+	20%  
+		-webkit-transform: translate(-2px, 2px)
+		transform: translate(-2px, 2px)
+  
+	40% 
+		-webkit-transform: translate(-2px, -2px)
+		transform: translate(-2px, -2px)
+  
+	60% 
+		-webkit-transform: translate(2px, 2px)
+		transform: translate(2px, 2px)
+  
+	80% 
+		-webkit-transform: translate(2px, -2px)
+		transform: translate(2px, -2px)
+  
+	100% 
+		-webkit-transform: translate(0)
+		transform: translate(0)
