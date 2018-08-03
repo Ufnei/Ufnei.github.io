@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BryakunovIvan</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,17 +16,15 @@
 		<div class="wrapper">
 
 			<div class="header">
-				<div class="logo">	
-					<!-- <img src="img/Logo2.png" alt=""> -->
+				<div class="logo">
 					<h1>B<span>I</span></h1>
 				</div>
 
 				<div class="header_sidebar">
-					<!-- <input class="menu_button_open" id="menu_button_open" type="button" value="Menu"></input> -->
 					<div class="menu_button_open" id="menu_button_open">
-						<div data-duration="1500"></div>
-						<div data-duration="1000"></div>
+						<div data-duration="750"></div>
 						<div data-duration="500"></div>
+						<div data-duration="250"></div>
 					</div>
 				</div>	
 
@@ -104,35 +103,6 @@
 
 				</div>
 
-				<div>
-
-					<div class="cube" id="cube1">
-
-						<div class="side" id="side1">   	<!-- Лицевая сторона карточки -->
-							<div class="process_card_icon">
-								<img src="img/Dyuawpri0aw.jpg" alt="">
-							</div>
-
-							<div class="process_card_name">
-								<h1>Programming</h1>
-							</div>
-						</div>
-
-						<div class="side" id="side2"></div>
-						<div class="side" id="side3"></div>
-						<div class="side" id="side4"></div>
-						<div class="side" id="side5"></div>
-
-						<div class="side" id="side6">
-							<div class="process_card_name">
-								<h1>Programming</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quam maxime nostrum voluptatem eveniet! Dolor repellat tenetur esse harum suscipit culpa sint ducimus assumenda, eum perferendis illo at molestiae ipsa.</p>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
 
 				<div class="card">
 
@@ -141,40 +111,43 @@
 					</div>
 
 					<div class="process_card_name">
-						<h1>Adaptation</h1>
+						<h1>Analysis</h1>
 					</div>
 
 				</div>
 
-				<div>
-					
-					<div class="cube" id="cube2">
 
-						<div class="side" id="side1">   	<!-- Лицевая сторона карточки -->
-							<div class="process_card_icon">
-								<img src="img/Dyuawpri0aw.jpg" alt="">
-							</div>
 
-							<div class="process_card_name">
-								<h1>Support</h1>
-							</div>
-						</div>
 
-						<div class="side" id="side2"></div>
-						<div class="side" id="side3"></div>
-						<div class="side" id="side4"></div>
-						<div class="side" id="side5"></div>
+				<div class="card">
 
-						<div class="side" id="side6">
-							<div class="process_card_name">
-								<h1>Support</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus distinctio rerum inventore dolorum in laudantium tenetur fugiat, atque repellat enim sequi adipisci libero provident aliquid non ullam quidem ex.</p>
-							</div>
-						</div>
+					<div class="process_card_icon">
+						<img src="img/Dyuawpri0aw.jpg" alt="">
+					</div>
 
+					<div class="process_card_name">
+						<h1>Analysis</h1>
 					</div>
 
 				</div>
+
+
+
+
+				<div class="card">
+
+					<div class="process_card_icon">
+						<img src="img/Dyuawpri0aw.jpg" alt="">
+					</div>
+
+					<div class="process_card_name">
+						<h1>Analysis</h1>
+					</div>
+
+				</div>
+
+
+
 
 			</div>
 
@@ -265,17 +238,40 @@
 	<section class="contact">
 
 		<div class="wrapper">
+			<div class="message">
+				<h1>LEAVE A MESSAGE</h1>
+					<form>
 
-			<div class="addresses">
-				<h1>Адрес</h1>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Site Name">
+						<input type="hidden" name="admin_email" value="admin@mail.com">
+						<input type="hidden" name="form_subject" value="Form Subject">
+						<!-- END Hidden Required Fields -->
+
+						<input type="text" name="Name" placeholder="You name..." required><br>
+						<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+						<input type="text" name="Phone" placeholder="You phone..."><br>
+						<button>Send</button>
+
+					</form>
 			</div>
+			<div class="contact_discription">
+				<div class="number">
+					<h1>Номер</h1>
+					<ul>
+						<li>89379691932</li>
+					</ul>
+				</div>
 
-			<div class="number">
-				<h1>Номер</h1>
-			</div>
-
-			<div class="web">
-				<h1>Web</h1>
+				<div class="web">
+					<h1>Web</h1>
+					<ul>
+						<li><a href="https://vk.com/ufnei" target="_blank"> Вконтакте </a></li>
+						<li>Telegramm</li>
+						<li>Telegramm</li>
+						<li>WatsApp</li>
+					</ul>
+				</div>				
 			</div>
 
 		</div>
@@ -286,7 +282,7 @@
 
 
 <script src="js/JQuery.js"></script>
-<script src="js/jQuery.scrollSpeed.js"></script> <!-- Скрипт для плавности прокрутки -->
+<!--<script src="js/jQuery.scrollSpeed.js"></script>--> <!-- Скрипт для плавности прокрутки -->
 <script src="js/anime.min.js"></script>          <!-- Скрипты анимации -->
 <script src="js/script.js"></script>
 
@@ -300,21 +296,6 @@
 	});
 </script>
 
-
-
-
-<!-- <script>
-$(window).scroll(function() {
-    if($(this).scrollTop() > 100 ) {
-		$('.representation').hide();
-    	$('.representation').show();
-	}
-	else {
-	    $('.representation').show();
-	    $('.representation').hide(); 
-	}
-});
-</script> -->
 
 
 <script>

@@ -12,8 +12,10 @@
 
 //******************ИМПОРТИРУЕМ АНИМАЦИЮ*****************
 @import "animation"
-//***********ИМПОРТИРУЕМ КУБЫ В БЛОК ПРОЦЕСС*************
-@import "cubs"
+
+
+header
+	overflow: hidden
 
 body 
 	margin: 0
@@ -106,18 +108,14 @@ header
 				border-radius: 10px
 				margin: 7px 0 0 0
 				background-color: #fff
-		.menu_button_open_fixed
-			position: fixed
 
 
 .header_menu
-	opacity: 0.8
-	border-radius: 15px
 	position: fixed
-	height: 950px
+	height: 100vh
 	width: 400px
 	background-color: #fff
-	top: 10px
+	top: 0px
 	left: 100%
 	transform: translateX(400px)
 	.menu_button_close
@@ -264,9 +262,6 @@ header
 				-o-filter: none
 				filter: none
 				filter: none 
-
-
-		//                          Стили старых карточек с псевдо 3д (Тени)
 		.card			
 			background-color: #fff
 			color: #000
@@ -277,6 +272,10 @@ header
 		.card:hover
 			transform: skewY(-5deg)
 			box-shadow: 0.8em 0.8em #ccc6c6
+
+
+
+
 
 
 //****************************************************
@@ -294,7 +293,7 @@ header
 		margin: 0 auto
 		color: #fff
 		background-color: #000
-		border-radius: 30px
+		border-radius: 20px
 		box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5)
 		h1
 			text-align: center		
@@ -310,7 +309,7 @@ header
 		background-color: #000
 		width: 40%
 		height: 600px
-		border-radius: 30px
+		border-radius: 20px
 		box-shadow: 0.4em 0.4em 20px rgba(122,122,122,0.5)
 		margin: 0 auto
 		h1
@@ -343,14 +342,8 @@ header
 	.latest_card
 		height: 700px
 		width: 100%
-		border-radius: 30px
+		border-radius: 5px
 		background-color: #fff
-		box-shadow: 0.4em 0.4em #ccc6c6
-		transition: all 1s ease
-	.latest_card:hover
-			transform: skewY(-0.5deg)
-			box-shadow: 0.5em 0.5em #ccc6c6
-			height: 700px
 
 
 	.latest_content
@@ -367,12 +360,14 @@ header
 .contact
 	.wrapper
 		display: flex
-		justify-content: space-between
-		.addresses,
-		.number,
-		.web
-			width: 30%
-			text-align: center
+		.message
+			width: 50%
+		.contact_discription
+			width: 50%
+			.number,
+			.web
+				width: 100%
+				text-align: center
 
 
 
