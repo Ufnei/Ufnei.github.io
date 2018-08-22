@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>uniMail</title>
+	<title>Random</title>
 </head>
 <body>
+	<button value="Считать" onclick="getFun()">Клик</button>
+	<input id="result">
+	<input id="clock">
+	<script>
+		var el = document.getElementById('result');
+		function getRandomInt()
+		{
 
-	<form>
+		  return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
-		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="ivb32472@gmail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
-		<!-- END Hidden Required Fields -->
+		}
 
-		<input type="text" name="Name" placeholder="You name..." required><br>
-		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="You phone..."><br>
-		<button>Send</button>
+		function getFun(){
+			var constGet = 1 + getRandomInt();
+			var constConst = 3 * constGet;
+			var i = 1;
+			var il = document.getElementById('clock');
+			il.value = "УУУУ СУКА"				
+			el.value = constConst;
 
-	</form>
-	
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="script.js"></script>
-
+		}
+	</script>
 </body>
 </html>
